@@ -1,7 +1,6 @@
 import json
 import os
 from scripts.habit import Habit
-from datetime import *
 
 
 def file_verification():
@@ -83,50 +82,3 @@ def store_data(habit_list):
     with open('habits.json', 'w') as store:                 # Overwrite habit.json with empty file.
         json.dump(save_data, store)                         # Dump the new data to habit.json.
 
-
-def add_habit(name: str, frequency: int, completion: int):
-    """Add a habit \n
-            name:[str] = 'name_of_habit'\n
-            frequency:[int] = 1 or 2:
-            \t- frequency = 1: daily
-            \t- frequency = 2: weekly \n
-            completion:[int] = 1 or 2:
-            \t- completion = 1: True
-            \t- completion = 2: False"""
-
-    if frequency == 1:                                          # Value recorded with tkinter radiobutton (1 or 2).
-        frequency_string = 'daily'                              # If value is 1 then frequency is daily.
-    else:
-        frequency_string = 'weekly'                             # If value is 2 then frequency is weekly.
-
-    if completion == 1:                                         # Value recorded with tkinter radiobutton (1 or 2).
-        completion_string = 'yes'                               # If value is 1 then habit is completed.
-        first_log = datetime.now().strftime('%Y-%m-%d %H:%M')   # Completed habits have more properties than incomplete
-        last_log = first_log                                    # habits.
-        all_logs = [first_log]                                  # As this is a new habit, logged for first time.
-        streak_start = first_log                                # first_log = last_log = all_log = streak_start = now()
-        streak = 1                                              # Streak is 1
-        longest_streak = 1                                      # Longest streak is 1
-        habit = {'name': name,
-                 'frequency': frequency_string,
-                 'complete': completion_string,
-                 'streak': streak,
-                 'streak_start': streak_start,
-                 'longest_streak': longest_streak,
-                 'first_log': first_log,
-                 'last_log': last_log,
-                 'all_logs': all_logs
-                 }                                             # Habit properties compiled in a dictionary
-
-    else:                                                      # An incomplete habit has no time and streak data.
-        completion_string = 'no'                               # Completion is used to determine if a habit is complete.
-        habit = {'name': name,                                 # This determines the properties that are assigned to the
-                 'frequency': frequency_string,                # habit.
-                 'complete': completion_string
-                 }
-
-    data = Habit()                                             # Create an object of Class Habit.
-    data.to_object(habit)                                      # Create a habit using the properties in dictionaries.
-    habit_list = data_retrieval()                              # Retrieve the existing list of objects.
-    habit_list.append(data)                                    # Append new object to end of existing habit list.
-    store_data(habit_list)                                     # Store the new habit_list to habits.json

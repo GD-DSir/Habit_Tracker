@@ -92,10 +92,16 @@ class GUI:
                     longest_streak = habit.longest_streak   # longest_streak of previous object, set longest_streak to
                     name = habit.name                       # the greater of the two. Capture the name of the habit
                                                             # with the longest_streak.
-
-        longest_streak_info = Label(main_stat_frame, text=f"Habit: {name}\n"      # Add streak and habit name to label.       
-                                                          f"{longest_streak} Times")
-        longest_streak_info.grid(column=1, row=2, sticky=N)                       # Grid the information label.
+                    longest_streak_info = Label(main_stat_frame,
+                                                text=f"Habit: {name}\n"     # Add streak and habit name to label.       
+                                                     f"{longest_streak} Times")
+                    longest_streak_info.grid(column=1, row=2, sticky=N)     # Grid the information label.
+            elif habit.complete == 'no' and longest_streak == 0:
+                name = habit.name                           # the greater of the two. Capture the name of the habit
+                longest_streak_info = Label(main_stat_frame,
+                                            text=f"Habit: {name}\n"         # Add streak and habit name to label.       
+                                                 f"{longest_streak} Times")
+                longest_streak_info.grid(column=1, row=2, sticky=N)         # Grid the information label.
 
         current_streak = 0                              # Create a variable longest_streak with value 0.
 
@@ -108,10 +114,17 @@ class GUI:
                     current_streak = habit.streak           # current_streak of previous object, set current_streak to
                     name = habit.name                       # the greater of the two. Capture the name of the habit
                                                             # with the longest current_streak
+                    current_streak_info = Label(main_stat_frame,
+                                                text=f"Habit: {name}\n"     # Add streak and habit name to label.
+                                                     f"{current_streak} Times")
+                    current_streak_info.grid(column=1, row=4, sticky=N)     # Grid the information label.
+            elif habit.complete == 'no' and current_streak == 0:
+                name = habit.name                           # the greater of the two. Capture the name of the habit
+                current_streak_info = Label(main_stat_frame,
+                                            text=f"Habit: {name}\n"         # Add streak and habit name to label.
+                                                 f"{current_streak} Times")
+                current_streak_info.grid(column=1, row=4, sticky=N)         # Grid the information label.
 
-        current_streak_info = Label(main_stat_frame, text=f"Habit: {name}\n"       # Add streak and habit name to label.
-                                                          f"{current_streak} Times")
-        current_streak_info.grid(column=1, row=4, sticky=N)                        # Grid the information label.
 
         oldest = dt.timedelta(days=0)                   # Create a variable oldest, type: timedelta, value: days=0.
 
@@ -125,10 +138,15 @@ class GUI:
                     oldest = delta                          # age of previous object, age calculated using
                     name = habit.name                       # now()-first_log, set oldest to the greater of the two.
                                                             # Capture the name of the oldest habit .
-
-        oldest_label_info = Label(self.stat_frame, text=f"Habit: {name}\n"      # Add age and habit name to label.
-                                                        f"First logged {str(oldest)[:-10]} ago")
-        oldest_label_info.grid(column=1, row=6, sticky=N)                       # Grid the information label.
+                    oldest_label_info = Label(self.stat_frame,
+                                              text=f"Habit: {name}\n"  # Add age and habit name to label.
+                                                   f"First logged {str(oldest)[:-10]} ago")
+                    oldest_label_info.grid(column=1, row=6, sticky=N)  # Grid the information label.
+            elif habit.complete == 'no' and oldest == dt.timedelta(days=0):
+                name = habit.name                           # the greater of the two. Capture the name of the habit
+                oldest_label_info = Label(self.stat_frame, text=f"Habit: {name}\n"  # Add age and habit name to label.
+                                                                f"{name} is added but not logged")
+                oldest_label_info.grid(column=1, row=6, sticky=N)                   # Grid the information label.
 
     def main_stat_inactive(self):
         """Stats displayed on main menu at start-up, inactive denotes that the data file contains no habits,
@@ -494,7 +512,7 @@ class GUI:
         stat_buttons = Frame(self.menu_frame)               # Create Frame for the habit buttons.
         stat_buttons.grid(row=1, column=1, padx=(30, 0))    # Grid Frame onto menu_frame.
 
-        stat_label = Label(stat_buttons, text="What do you wish to do:")
+        stat_label = Label(stat_buttons, text="What do you wish to view:")
         stat_label.grid(column=1, row=1, sticky=W + E, pady=(0, 10))    # Create a label with a prompt.
 
         detail_button = Button(stat_buttons,                      # Set parameters for the first button.
@@ -507,7 +525,7 @@ class GUI:
 
         if file_verification():
             performance_button = Button(stat_buttons,                # Set parameters for the second button.
-                                        text='View Best And Worst',
+                                        text='Best And Worst',
                                         command=performance_clicked, # Calls function performance_clicked when button is
                                         bd=1,                        # pressed.
                                         relief='ridge',

@@ -1,7 +1,6 @@
 import datetime as dt
 import math
 import tkinter.messagebox
-from datetime import timedelta
 
 
 class Habit:

@@ -8,6 +8,7 @@ The program uses a GUI created with tkinter. The main screen has 3 panes:
 - Input pane
 
 The stats pane is used to display all statistical information: detailed habits stats, habit frequencies, best and worst performing.
+
 The menu pane is used to navigate the program, giving users the ability to:
 - Log existing habits
 - Modify an existing habit

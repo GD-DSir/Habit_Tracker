@@ -31,9 +31,9 @@ An example habits.json file is included, the file can be deleted or habits remov
 
 # Use application
 If habits.json does not exist or is empty:
-The only usable pane in this case is the add pane. Both the stat and menu pane will inform the user to add a habit to use the program features.
+The only usable pane in this case is the input pane. Both the stat and menu pane will inform the user to add a habit to use the program features.
 
-Using the add pane:
+Using the add function on input pane (add pane):
 
 The add pane consists of the following elements:
 - Entry box to input habit name.
@@ -43,7 +43,12 @@ The add pane consists of the following elements:
 
   The complete function is used to add habits that are not complete at time of adding. The habits will be added to list of habits allowing users to be reminded of the habit regardless of completion.
   The main use for this is to add a habit that might be forgotten if not added at the time of think about it, usefull for those who are forgetfull.
+
 The Add button is only clickable if all fields are filled.
+
+With a habit now added, or using example file:
+All panes are now usable. 
+New habits can be added using the add pane.
 
 Statistics will be displayed in the stat pane.
 The buttons of the menu pane are clickable and program can be navigated:

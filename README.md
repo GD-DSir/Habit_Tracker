@@ -56,7 +56,7 @@ Statistics will be displayed in the stat pane.
 The buttons of the menu pane are clickable and program can be navigated:
 - Button 1: Log Progress
 
-  Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to be logged will trigger a pop-up prompting the user to confirm.
+  Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit to be logged will trigger a pop-up prompting the user to confirm.
   When confirmed one of 3 pop-ups will be displayed:
   - Pop-up 1: 'habit_name' was successfully logged current streak 'habit_streak'.
  
@@ -78,7 +78,7 @@ The buttons of the menu pane are clickable and program can be navigated:
   Clicking Button 2 will replace the buttons on the menu pane with 3 new buttons:
   - Button 1: Modify a Habit
  
-    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to modify will replace the add function with the modify function.
+    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit to modify will replace the add function with the modify function.
     Using the edit function on input pane (edit pane):
 
     The edit pane consists of the following elements:
@@ -97,7 +97,7 @@ The buttons of the menu pane are clickable and program can be navigated:
     This will also refresh the stat and menu pane to reflect the changes made.
   - Button 2: Remove a Habit
     
-    Clicking Button 2 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to remove will trigger a pop-up:
+    Clicking Button 2 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit to remove will trigger a pop-up:
 
     The pop-up reads -- Habit 'habit_name' will be deleted, THIS CANNOT BE UNDONE' -- The user must confirm.
     

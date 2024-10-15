@@ -123,7 +123,7 @@ The buttons of the menu pane are clickable and program can be navigated:
     - Habit age
     - Time since last log
    
-      For the selected habit will be displayed.
+    For the selected habit will be displayed.
   - Button 2: Best and Worst
   - Button 3: Habit Frequency
   - Button 4: Return

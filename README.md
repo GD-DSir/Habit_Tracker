@@ -44,7 +44,7 @@ The add pane consists of the following elements:
 - Add button to add habit with specified properties. 
 
   The complete function is used to add habits that are not complete at time of adding. The habits will be added to list of habits allowing users to be reminded of the habit regardless of completion.
-  The main use for this is to add a habit that might be forgotten if not added at the time of think about it, usefull for those who are forgetfull.
+  The main use for this is to add a habit that might be forgotten if not added at the time of think about it, useful for those who are forgetful.
 
 The Add button is only clickable if all fields are filled.
 

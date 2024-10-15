@@ -38,7 +38,11 @@ The buttons of the menu pane are clickable and program can be navigated:
   Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to be logged will trigger a pop-up prompting the user to confirm.
   When confirmed one of 3 pop-ups will be displayed:
   - Pop-up 1: 'habit_name' was successfully logged current streak 'habit_streak'.
+ 
+    This pop-up is displayed if a daily habits is logged within streak+1 days since the start of the the streak. This affords a user the ability to miss the habit once without the streak resetting.
   - Pop-up 2: The current streak for habit_name has reset was 'habit_streak' currently 1.
+    
+    This pop-up is displayed if a daily habits is not logged within streak+1 days since the start of the the streak. The previous streak value is set to 1.
   - Pop-up 3: 'habit_name' was logged 'hours'h:'minutes'm ago, Please try again later.
 - Button 2: Open Habit Menu
 - Button 3: View Additional Stats

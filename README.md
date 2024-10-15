@@ -46,10 +46,11 @@ The add pane consists of the following elements:
 
 The Add button is only clickable if all fields are filled.
 
+
 With a habit now added, or using example file:
+
 All panes are now usable. 
 New habits can be added using the add pane.
-
 Statistics will be displayed in the stat pane.
 The buttons of the menu pane are clickable and program can be navigated:
 - Button 1: Log Progress

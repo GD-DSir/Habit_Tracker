@@ -113,7 +113,7 @@ The buttons of the menu pane are clickable and program can be navigated:
   Clicking Button 3 will replace the buttons on the menu pane with 4 new buttons:
   - Button 1: Detailed Habit Stats
  
-    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit will view its statistics of the stats pane.
+    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit will view the folowing statistics on the stats pane.
     
     - Habit name
     - Frequency
@@ -123,7 +123,6 @@ The buttons of the menu pane are clickable and program can be navigated:
     - Habit age
     - Time since last log
    
-    For the selected habit will be displayed.
   - Button 2: Best and Worst
   - Button 3: Habit Frequency
   - Button 4: Return

@@ -141,5 +141,5 @@ The buttons of the menu pane are clickable and program can be navigated:
     Clicking Button 4 will replace the buttons on the menu pane with main menu buttons (previous menu)
 
 # Test suite
-The test_suite folder is for verification purposes only and can be ignored.
+The test_suite folder is for verification purposes only, users are free to delete the folder.
 

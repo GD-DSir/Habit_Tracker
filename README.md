@@ -1,4 +1,4 @@
-# Intoduction
+# Introduction
 Welcome and thank you for trying out my Habit tracker, the Tracker was made to track the progress of various Habits of daily and weekly frequencies, with the goal of motivating users to build habits and reminding users of habits to be completed.
 
 # Overview

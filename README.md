@@ -50,7 +50,7 @@ The Add button is only clickable if all fields are filled.
 ## With a habit now added, or using example file:
 
 All panes are now usable. 
-New habits can be added using the add pane.
+New habits can be added using the add pane, habits with the same name as existing habits cannot be added.
 Statistics will be displayed in the stat pane.
 The buttons of the menu pane are clickable and program can be navigated:
 - Button 1: Log Progress
@@ -73,6 +73,26 @@ The buttons of the menu pane are clickable and program can be navigated:
 
     This pop-up is displayed if a weekly habits is logged within 6d of the previous log.
 - Button 2: Open Habit Menu
+
+  Clicking Button 2 will replace the buttons on the menu pane with 3 new buttons:
+  - Button 1: Modify a Habit
+ 
+    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to modify will replace the add function with the modify function.
+    Using the edit function on input pane (edit pane):
+
+    The edit pane consists of the following elements:
+    - Entry box to input new habit name.
+    - Radiobuttons to select habit frequency.
+    - Radiobuttons to select the completion state of the habit.
+    - Add button to add habit with specified properties. 
+
+    The complete function is used to add habits that are not complete at time of adding. The habits will be added to list of habits allowing users to be reminded of the habit regardless of completion.
+    The main use for this is to add a habit that might be forgotten if not added at the time of think about it, usefull for those who are forgetfull.
+
+The Add button is only clickable if all fields are filled.
+  - Button 2: Remove a Habit
+  - Button 3: Return
+  When confirmed one of 3 pop-ups will be displayed:
 - Button 3: View Additional Stats
 
 

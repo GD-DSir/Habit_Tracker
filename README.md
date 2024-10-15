@@ -30,7 +30,19 @@ If using Windows click on the Explorer adress bar in the folder and type cmd. Th
 An example habits.json file is included, the file can be deleted or habits removed via the interface.
 
 # Use application
-If habits.json exists and contains data:
+If habits.json does not exist or is empty:
+The only usable pane in this case is the add pane. Both the stat and menu pane will inform the user to add a habit to use the program features.
+
+Using the add pane:
+The add pane consists of the following elements:
+- Entry box to input habit name.
+- Radiobuttons to select habit frequency.
+- Radiobuttons to select the completion state of the habit.
+
+  The complete function is used to add habits that are not complete at time of adding. The habits will be added to list of habits allowing users to be reminded of the habit regardless of completion.
+  The main use for this is to add a habit that might be forgotten if not added at the time of think about it, usefull for those who are forgetfull.
+
+
 Statistics will be displayed in the stat pane.
 The buttons of the menu pane are clickable and program can be navigated:
 - Button 1: Log Progress
@@ -52,4 +64,4 @@ The buttons of the menu pane are clickable and program can be navigated:
 - Button 2: Open Habit Menu
 - Button 3: View Additional Stats
 
-If habits.json does not exist or is empty.
+

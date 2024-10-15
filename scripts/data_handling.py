@@ -81,8 +81,10 @@ def store_data(habit_list):
 
     with open('habits.json', 'w') as store:                         # Overwrite habit.json with empty file.
         json.dump(save_data, store)                                 # Dump the new data to habit.json.
-    path = os.getcwd()                                              # Get the current working directory
-    test_file = os.path.join(path, 'test_suite', 'habits.json')     # Enter the test_suite folder and create habits.json
-    with open(test_file, 'w') as store:                             # Access habits.json in test_suite.
-        json.dump(save_data, store)                                 # Dump the new data to habit.json in test_suite.
+
+    if 'test_suite' in os.listdir():
+        path = os.getcwd()  # Get the current working directory
+        test_file = os.path.join(path, 'test_suite', 'habits.json')
+        with open(test_file, 'w') as store:                             # Access habits.json in test_suite.
+            json.dump(save_data, store)                                 # Dump the new data to habit.json in test_suite.
 

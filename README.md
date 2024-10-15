@@ -95,7 +95,9 @@ The buttons of the menu pane are clickable and program can be navigated:
   - Button 2: Remove a Habit
     
     Clicking Button 2 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to remove will trigger a pop-up:
-    the pop-up reads -- Habit 'habit_name' will be deleted, THIS CANNOT BE UNDONE' -- The user must confirm.
+
+    The pop-up reads -- Habit 'habit_name' will be deleted, THIS CANNOT BE UNDONE' -- The user must confirm.
+    
     If confirmed the habit is removed and cannot be recovered.
     This will also refresh the stat and menu pane to reflect the changes made.
   - Button 3: Return

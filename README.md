@@ -110,4 +110,24 @@ The buttons of the menu pane are clickable and program can be navigated:
   
 - Button 3: View Additional Stats
 
+  Clicking Button 3 will replace the buttons on the menu pane with 4 new buttons:
+  - Button 1: Detailed Habit Stats
+ 
+    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit will view its statistics of the stats pane.
+    
+    - Habit name
+    - Frequency
+    - Current streak
+    - Longest streak
+    - Date added
+    - Habit age
+    - Time since last log
+   
+      For the selected habit will be displayed.
+  - Button 2: Best and Worst
+  - Button 3: Habit Frequency
+  - Button 4: Return
+ 
+    Clicking Button 4 will replace the buttons on the menu pane with main menu buttons (previous menu)
+
 

@@ -30,7 +30,7 @@ If using Windows click on the Explorer adress bar in the folder and type cmd. Th
 An example habits.json file is included, the file can be deleted or habits removed via the interface.
 
 # Use application
-If habits.json does not exist or is empty:
+1. If habits.json does not exist or is empty:
 
 The only usable pane in this case is the input pane. Both the stat and menu pane will inform the user to add a habit to use the program features.
 
@@ -47,7 +47,7 @@ The add pane consists of the following elements:
 
 The Add button is only clickable if all fields are filled.
 
-    # With a habit now added, or using example file:
+2. With a habit now added, or using example file:
 
 All panes are now usable. 
 New habits can be added using the add pane.

@@ -88,7 +88,7 @@ The buttons of the menu pane are clickable and program can be navigated:
     - Reset button sets habit state to incomplete and removes stored data.
     - Change button to add habit with specified properties, and place add pane on input pane. 
 
-    The name of the habit can be set to it's existing name if the frequency is changed, the name and frequency can both be changed and the name can be changed without changing frequency. If the properties are unchanged the user will be informed.
+    The name of the habit can be set to its existing name if the frequency is changed, the name and frequency can both be changed and the name can be changed without changing frequency. If the properties are unchanged the user will be informed.
 
     If the frequency is changed the habit will be reset. Changing the name does not reset the progress. 
 
@@ -113,7 +113,7 @@ The buttons of the menu pane are clickable and program can be navigated:
   Clicking Button 3 will replace the buttons on the menu pane with 4 new buttons:
   - Button 1: Detailed Habit Stats
  
-    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit will view the folowing statistics on the stats pane.
+    Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names, the return button can be used to return to previous menu. Clicking on the name of habit will view the following statistics on the stats pane.
     
     - Habit name
     - Frequency

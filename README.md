@@ -34,8 +34,8 @@ If habits.json exists and contains data:
 Statistics will be displayed in the stat pane.
 The buttons of the menu pane are clickable and program can be navigated:
 - Button 1: Log Progress
-  Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to be logged will trigger a pop-up prompting the user to confirm.
-  When confirmed one of 3 pop-ups will be displayed:
+      Clicking Button 1 will replace the buttons on the menu pane with a scrollable list of buttons with habit names. Clicking on the name of habit to be logged will trigger a pop-up prompting the user to confirm.
+      When confirmed one of 3 pop-ups will be displayed:
   - Pop-up 1: 'habit_name' was successfully logged current streak 'habit_streak'
   - Pop-up 2: The current streak for habit_name has reset was 'habit_streak' currently 1
   - Pop-up 3: habit_name was logged 'hours'h:'minutes'm ago, Please try again later

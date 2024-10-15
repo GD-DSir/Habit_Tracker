@@ -123,8 +123,19 @@ The buttons of the menu pane are clickable and program can be navigated:
     - Habit age
     - Time since last log
    
+    The return button on this page will replace the detail statistics with the main page statistics   
   - Button 2: Best and Worst
+ 
+    Clicking Button 2 will display the best and worst performing habit information on the stats pane.
+
+    The performance is a measure of the number of logs completed since the habit was added. Number of recorder logs / days or weeks depending on frequency. A greater ratio indicates a better performing habit. 
   - Button 3: Habit Frequency
+ 
+    Clicking Button 3 will display the frequency of all habits.
+    
+    2 List boxes are created on the stats pane, one for daily on for weekly.
+
+    The return button on this page will replace the detail statistics with the main page statistics
   - Button 4: Return
  
     Clicking Button 4 will replace the buttons on the menu pane with main menu buttons (previous menu)

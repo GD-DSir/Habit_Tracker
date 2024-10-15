@@ -62,7 +62,7 @@ The buttons of the menu pane are clickable and program can be navigated:
  
     This pop-up is displayed if a daily habit is logged within streak+1 days since the start of the the streak. This affords a user the ability to miss the habit once without the streak resetting.
 
-    This pop-up is displayed if a weekly habit is logged within streak*7 days 12-hour since the start of the the streak. Weekly habits have a 12 hour grace period.
+    This pop-up is displayed if a weekly habit is logged within streak*7 days 12-hour since the start of the the streak. Weekly habits have a 12-hour grace period.
   - Pop-up 2: The current streak for habit_name has reset was 'habit_streak' currently 1.
     
     This pop-up is displayed if a daily habit is not logged within streak+1 days since the start of the the streak. The previous streak value is set to 1.

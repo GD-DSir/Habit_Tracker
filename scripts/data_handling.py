@@ -79,6 +79,10 @@ def store_data(habit_list):
     data = to_json(habit_list)                              # Calls function to_json() for data conversion.
     save_data = {"habits": data}                            # Set format for habit.json, and add data.
 
-    with open('habits.json', 'w') as store:                 # Overwrite habit.json with empty file.
-        json.dump(save_data, store)                         # Dump the new data to habit.json.
+    with open('habits.json', 'w') as store:                         # Overwrite habit.json with empty file.
+        json.dump(save_data, store)                                 # Dump the new data to habit.json.
+    path = os.getcwd()                                              # Get the current working directory
+    test_file = os.path.join(path, 'test_suite', 'habits.json')     # Enter the test_suite folder and create habits.json
+    with open(test_file, 'w') as store:                             # Access habits.json in test_suite.
+        json.dump(save_data, store)                                 # Dump the new data to habit.json in test_suite.
 

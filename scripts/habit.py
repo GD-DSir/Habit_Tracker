@@ -91,7 +91,7 @@ class Habit:
                 last_log = dt.datetime.strptime(self.last_log, '%Y-%m-%d %H:%M')    # Convert property to dt object.
                 streak_start = dt.datetime.strptime(self.streak_start, '%Y-%m-%d %H:%M') # Convert property to dt object.
                 # Verify streak validity, the days since streak start should be within 7*steak days.
-                if last_log - streak_start <= dt.timedelta(days=self.streak*7):
+                if last_log - streak_start <= dt.timedelta(days=self.streak*7, hours=12):
                     self.streak = self.streak + 1                   # Increase streak value if streak is valid
                     tkinter.messagebox.showinfo('Success',
                                                 f'{self.name} was successfully logged,\n '

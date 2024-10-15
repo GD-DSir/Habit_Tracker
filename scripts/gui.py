@@ -80,7 +80,6 @@ class GUI:
         main_stat_frame.grid(column=1, row=1)           # Grid the stats to the stat_frame.
 
         habit_list = data_retrieval()                   # Retrieve the list of objects.
-        name = str                                      # Create variable name.
         longest_streak = 0                              # Create a variable longest_streak with value 0.
 
         longest_streak_label = Label(main_stat_frame, text="All Time Longest Streak:", font='Helvetica 8 bold')
@@ -810,8 +809,8 @@ class GUI:
                         logs = all_logs  # Assign the number of logs for the best performing habit.
                         previous_weekly = weekly_performance  # Save habit performance to be assessed in next iteration.
 
-        best_label = Label(performance_button, text='Worst habit')
-        best_label.grid(column=1, columnspan=2, row=5)  # Create and grid label denoting the worst habit.
+        worst_label = Label(performance_button, text='Worst habit')
+        worst_label.grid(column=1, columnspan=2, row=5)  # Create and grid label denoting the worst habit.
 
         name_label = Label(performance_button, text='Habit name:')
         name_label.grid(column=1, row=6)    # Create and grid label for name property.
@@ -890,7 +889,7 @@ class GUI:
             completion are radiobuttons, duplicate habit names are not permitted"""
         def my_callback(*args):
             """Monitor changes in user input to determine the state of the add button"""
-            habit_name = name.get()             # Get habit name from entry field, done each time field changes
+            habit_name = name.get().lower().title()  # Get habit name from entry field and format, done each time field changes
             habit_frequency = frequency.get()   # Get habit frequency from radiobutton, done each time field changes
             habit_completion = completion.get() # Get habit completion from radiobutton, done each time field changes
             if habit_name != '' and 1 <= habit_frequency <= 2 and 1 <= habit_completion <= 2:
@@ -981,7 +980,7 @@ class GUI:
             frequency will reset the habit. The habit can also be reset on this frame"""
         def my_callback(*args):
             """Monitor changes in user input to determine the state of the change button"""
-            habit_name = new_name.get()         # Get habit name from entry field, done each time field changes
+            habit_name = new_name.get().lower().title()   # Get habit name from entry field and format, done each time field changes
             habit_frequency = frequency.get()   # Get habit frequency from radiobutton, done each time field changes
             if habit_frequency == 1:            # Convert property to match object property, receive integer (1 or 2)
                 frequency_string = 'daily'      # convert to string ('daily' or 'weekly')
@@ -1084,3 +1083,4 @@ class GUI:
 
         my_callback()   # Function tracking changes in variable using .trace, used for duplicate handling and change
                         # button state.
+

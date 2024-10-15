@@ -2,10 +2,10 @@
 Welcome and thank you for trying out my Habit tracker, the Tracker was made to track the progress of various Habits of daily and weekly frequencies, with the goal of motivating users to build habits and reminding users of habits to be completed.
 
 # Overview
-The program uses a GUI created with tkinter. The main screen has 3 panes.
-    - Stats pane
-    - Menu pane
-    - Input pane
+The program uses a GUI created with tkinter. The main screen has 3 panes:
+- Stats pane
+- Menu pane
+- Input pane
 The stats pane is used to display all statistical information: detailed habits stats, habit frequencies, best and worst performing.
 The menu pane is used to navigate the program, giving users the ability to:
     - Log existing habits

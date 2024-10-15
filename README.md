@@ -83,13 +83,13 @@ The buttons of the menu pane are clickable and program can be navigated:
     The edit pane consists of the following elements:
     - Entry box to input new habit name.
     - Radiobuttons to select habit frequency.
-    - Radiobuttons to select the completion state of the habit.
-    - Add button to add habit with specified properties. 
+    - Return button place add pane on input pane.
+    - Reset button sets habit state to incomplete and removes stored data.
+    - Change button to add habit with specified properties. 
 
-    The complete function is used to add habits that are not complete at time of adding. The habits will be added to list of habits allowing users to be reminded of the habit regardless of completion.
-    The main use for this is to add a habit that might be forgotten if not added at the time of think about it, usefull for those who are forgetfull.
-
-The Add button is only clickable if all fields are filled.
+    The name of the habit can be set to it's existing name if the frequency is changed, the name and frequency can both be changed and the name can be changed without changing frequency. If the properties are unchanged the user will be informed.
+    If the frequency is changed the habit will be reset. Changing the name does not reset the progress. 
+    The Change button is only clickable if all fields are filled, and above conditions satisfied.
   - Button 2: Remove a Habit
   - Button 3: Return
   When confirmed one of 3 pop-ups will be displayed:
